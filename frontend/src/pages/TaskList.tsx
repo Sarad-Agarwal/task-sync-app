@@ -13,7 +13,8 @@ const TaskList: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
 
   // Use environment variable for API base URL
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000";
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000"; // for Vite
+
 
   const fetchTasks = async () => {
     try {
