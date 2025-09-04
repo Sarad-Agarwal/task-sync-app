@@ -12,9 +12,12 @@ interface Task {
 const TaskList: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
 
+  // Use environment variable for API base URL
+  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3000";
+
   const fetchTasks = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/tasks");
+      const res = await fetch(`${API_URL}/api/tasks`);
       const data = await res.json();
       setTasks(data);
     } catch (err) {
@@ -29,7 +32,7 @@ const TaskList: React.FC = () => {
 
   const addTask = async (title: string, description?: string) => {
     try {
-      const res = await fetch("http://localhost:3000/api/tasks", {
+      const res = await fetch(`${API_URL}/api/tasks`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title, description }),
@@ -43,7 +46,7 @@ const TaskList: React.FC = () => {
 
   const deleteTask = async (id: string) => {
     try {
-      await fetch(`http://localhost:3000/api/tasks/${id}`, { method: "DELETE" });
+      await fetch(`${API_URL}/api/tasks/${id}`, { method: "DELETE" });
       setTasks((prev) => prev.filter((t) => t.id !== id));
     } catch (err) {
       console.error(err);
@@ -56,7 +59,7 @@ const TaskList: React.FC = () => {
     if (!title) return;
 
     try {
-      const res = await fetch(`http://localhost:3000/api/tasks/${id}`, {
+      const res = await fetch(`${API_URL}/api/tasks/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title, description, completed: false }),
