@@ -1,0 +1,115 @@
+/* ===================== */
+/* Task Card */
+.task-card {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f); /* warm orange-pink gradient */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.task-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+  background: linear-gradient(135deg, #ffd6a5, #ff7eb3); /* brighter hover gradient */
+}
+
+/* Task Title & Description */
+.task-card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #7c3aed; /* bright purple */
+}
+
+.task-card p {
+  font-size: 1rem;
+  color: #222; /* dark text for readability */
+  margin-top: 0.5rem;
+}
+
+/* ===================== */
+/* Buttons */
+.button {
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Primary Button */
+.button-primary {
+  background: linear-gradient(90deg, #4ade80, #22d3ee); /* green to cyan */
+  color: white;
+}
+
+.button-primary:hover {
+  background: linear-gradient(90deg, #22d3ee, #4ade80);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* Accent Button */
+.button-accent {
+  background: linear-gradient(90deg, #f472b6, #fbbf24); /* pink to yellow */
+  color: white;
+}
+
+.button-accent:hover {
+  background: linear-gradient(90deg, #fbbf24, #f472b6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+/* ===================== */
+/* Navbar */
+nav {
+  background: linear-gradient(90deg, #06b6d4, #3b82f6); /* cyan to blue */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 0 0 1rem 1rem;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #facc15; /* bright yellow accent */
+}
+
+.nav-link span {
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  width: 0;
+  height: 3px;
+  background-color: #f472b6; /* pink accent underline */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover span {
+  width: 100%;
+}
+
+/* ===================== */
+/* Page Background */
+body {
+  background: linear-gradient(135deg, #f0fdfa, #fef9c3); /* soft bright gradient */
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
