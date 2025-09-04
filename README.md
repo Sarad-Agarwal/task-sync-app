@@ -84,16 +84,20 @@ task-sync-app/
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
-### Task List
-(screenshots/first.png)
+### First: Task List
+![Task List](screenshots/first.png)
 
-### Sync Status
-(screenshots/second.png)
+### Second: Sync Status
+![Second Status](screenshots/second.png)
 
-### Add Task
-(screenshots/third.png)
+### Third: Add Task
+![Third Task](screenshots/third.png)
+
+### Fourth: (Optional / Another Screenshot)
+![Fourth Screenshot](screenshots/fourth.png)
+
 
 ---
 
