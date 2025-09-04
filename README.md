@@ -28,16 +28,6 @@ You can use the frontend to interact with the backend API for creating, editing,
 
 ---
 
-## 🚀 Deployment
-
-The project is live on Render:
-
-- **Backend API:** [https://task-sync-app.onrender.com/api/tasks](https://task-sync-app.onrender.com/api/tasks)  
-- **Frontend App:** [https://task-sync-app-1.onrender.com](https://task-sync-app-1.onrender.com)  
-
-You can use the frontend to interact with the backend API for creating, editing, deleting, and syncing tasks in real-time. 🌟
----
-
 ## 🛠️ Tech Stack
 
 ### Frontend
