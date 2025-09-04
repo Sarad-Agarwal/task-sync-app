@@ -84,6 +84,19 @@ task-sync-app/
 
 ---
 
+## Screenshots
+
+### Task List
+(screenshots/first.png)
+
+### Sync Status
+(screenshots/second.png)
+
+### Add Task
+(screenshots/third.png)
+
+---
+
 ## 🏗️ Challenges & Solutions
 
 While building this project, I faced some interesting challenges:
